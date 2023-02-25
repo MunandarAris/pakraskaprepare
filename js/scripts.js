@@ -54,10 +54,10 @@ window.addEventListener("DOMContentLoaded", (event) => {
   const mobileBody = document.getElementById("mobile-view"),
     desktopBody = document.getElementById("desktop-view");
   if (isMobile) {
-    mobileBody.style.display = "block";
-    desktopBody.style.display = "none";
+    mobileBody.style.display = "block !important";
+    desktopBody.style.display = "none !important";
   } else {
-    mobileBody.style.display = "none";
-    desktopBody.style.display = "block";
+    mobileBody.style.display = "none !important";
+    desktopBody.style.display = "block !important";
   }
 });
