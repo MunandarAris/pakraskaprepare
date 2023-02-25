@@ -52,8 +52,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
   const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
   if (isMobile) {
     const body = document.getElementById("page-top");
-    alert("Situs ini tidak mendukung mobile view");
     body.style.display = "none";
+    alert("Situs ini tidak mendukung mobile view");
   } else {
     body.style.display = "block";
   }
