@@ -50,13 +50,14 @@ window.addEventListener("DOMContentLoaded", (event) => {
   });
 
   const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+  const mobileBody = document.getElementById("mobile-view"),
+    desktopBody = document.getElementById("desktop-view");
   if (isMobile) {
-    const body = document.getElementById("page-top");
-    body.style.display = "none";
-    alert(
-      "Situs ini tidak mendukung mobile, silahkan membuka lewat link ini ya https://happy-wedding-pak-raska-dan-bu-nisa.vercel.app"
-    );
+    mobileBody.style.display = "block";
+    desktopBody.style.display = "none";
   } else {
-    body.style.display = "block";
+    mobileBody.style.display = "none";
+    desktopBody.style.display = "block";
   }
 });
