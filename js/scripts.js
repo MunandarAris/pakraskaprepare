@@ -48,16 +48,4 @@ window.addEventListener("DOMContentLoaded", (event) => {
       }
     });
   });
-
-  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
-  const mobileBody = document.getElementById("mobile-view"),
-    desktopBody = document.getElementById("desktop-view");
-  if (isMobile) {
-    mobileBody.style.display = "block !important";
-    desktopBody.style.display = "none !important";
-  } else {
-    mobileBody.style.display = "none !important";
-    desktopBody.style.display = "block !important";
-  }
 });
