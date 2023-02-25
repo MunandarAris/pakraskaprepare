@@ -53,7 +53,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
   if (isMobile) {
     const body = document.getElementById("page-top");
     body.style.display = "none";
-    alert("Situs ini tidak mendukung mobile view");
+    alert(
+      "Situs ini tidak mendukung mobile, silahkan membuka lewat link ini ya https://happy-wedding-pak-raska-dan-bu-nisa.vercel.app"
+    );
   } else {
     body.style.display = "block";
   }
